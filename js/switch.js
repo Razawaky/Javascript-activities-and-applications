@@ -22,5 +22,7 @@ switch(day0Week) {
     case 'thursday':
         console.log('Thursday');
         break;
-    default:  //if the variable doesn  
+    default: 
+    console.log('Wrong day');
+        break;
 }
