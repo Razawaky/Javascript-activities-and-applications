@@ -1,0 +1,18 @@
+//fazer um constructor da class carro(this.), emetir uma mensagem, this 
+//valor do atributo, 
+//modulo export 
+
+//requeire carro
+//class principal com static main sem arg pq nn precisa e logo apos, setar o valor seguindo
+//o constructor.
+
+// const Carro = require('./Carro');
+// class Principal{
+//     static main(){
+//         let meuCarro = new Carro('VW', 'Jetta', 2021);
+//         console.log(meuCarro.acelerar());
+//         console.log(meuCarro.frear());
+//         console.log(meuCarro.ligarFarol());
+//     }
+// }
+// Principal.main();'
