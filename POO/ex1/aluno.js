@@ -1,7 +1,9 @@
-class aluno extends Pessoa{
-    constructor(matricula, curso, modulo){
+class Aluno extends Pessoa{
+    constructor(matricula, curso, nome, idade, sexo){
         this.matricula = matricula;
         this.matricula = curso;
-        this.matricula = modulo;
+        super(nome, idade, sexo);
     }
 }
+
+module.exports = Aluno;
