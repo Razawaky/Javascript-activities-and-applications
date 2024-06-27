@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhe o Número</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #02010a;
+            color: #efefef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: "Space Grotesk", sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: 700;
+        }
+
+        form {
+            background: #0a0912;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+
+        input[type="text"], input[type="email"], input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            background: none;
+            border: 1px solid #140e2a;
+            border-radius: 6px;
+            box-sizing: border-box;
+            color: #efefef;
+            transition: all 0.3s;
+        }
+
+        input[type="text"]:focus, input[type="email"]:focus, input[type="number"]:focus {
+            border-color: #0d00a4;
+            outline: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #0d00a4;
+            color: #f3f3f3;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            font-weight: 700;
+            transition: all 0.3s;
+        }
+
+        button:hover {
+            background-color: #00b8ff;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: 500;
+            color: #f3f3f3;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <form id="formAdivinhar">
+        <h1>Adivinhe o Número</h1>
+        <label for="num">Digite um número de 1 a 10:</label>
+        <input type="number" id="num" name="num" min="1" max="10" required>
+        <button type="button" onclick="adivinharNum()">Adivinhar</button>
+        <div id="result" class="result"></div>
+    </form>
+    <script src="script5.js"></script>
+</body>
+</html>
