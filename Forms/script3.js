@@ -1,4 +1,4 @@
-function calcIMC() {
+function calculoIMC() {
     var weight = parseFloat(document.getElementById('weight').value);
     var height = parseFloat(document.getElementById('height').value);
     var result = document.getElementById('result');
@@ -12,11 +12,11 @@ function calcIMC() {
     var interpretacao;
 
     if (imc < 18.5) {
-        interpretacao = 'Abaixo do weight';
+        interpretacao = 'Abaixo do peso';
     } else if (imc >= 18.5 && imc < 24.9) {
-        interpretacao = 'weight normal';
+        interpretacao = 'peso normal';
     } else if (imc >= 25 && imc < 29.9) {
-        interpretacao = 'Sobreweight';
+        interpretacao = 'Sobrepeso';
     } else {
         interpretacao = 'Obesidade';
     }

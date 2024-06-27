@@ -1,3 +1,16 @@
+document.addEventListener("DOMContentLoaded", function() { //validação para de input email
+    var emailInput = document.getElementById('emailform');
+    emailInput.addEventListener('input', function() {
+        var re = /\S+@\S+\.\S+/; // verifica a presença do símbolo @
+        if(!re.test(this.value)) {
+            this.setCustomValidity("Por favor, insira um endereço de e-mail válido.");
+        } else {
+            this.setCustomValidity(""); 
+        }
+        this.reportValidity(); // Dispara a validação 
+    });
+});
+
 function toggleCampAdd() {
     var checkbox = document.getElementById('adressCheckbox');
     var campAdd = document.getElementById('campAdd');
